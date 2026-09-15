@@ -204,8 +204,6 @@ jobs:
     runs-on: ubuntu-22.04
     env:
       ARTEMIS_ENV: staging
-      PROVENANCE_SERVICE_URL: ${{ vars.PROVENANCE_SERVICE_URL }}
-      ARTEMIS_PROMETHEUS_URL: ${{ vars.ARTEMIS_PROMETHEUS_URL }}
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
@@ -250,8 +248,6 @@ jobs:
     runs-on: ubuntu-22.04
     env:
       ARTEMIS_ENV: prod
-      PROVENANCE_SERVICE_URL: ${{ vars.PROVENANCE_SERVICE_URL }}
-      ARTEMIS_PROMETHEUS_URL: ${{ vars.ARTEMIS_PROMETHEUS_URL }}
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
